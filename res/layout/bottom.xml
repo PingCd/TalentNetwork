@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     >
+	 <RelativeLayout android:id="@+id/job_bottom"
+                			android:layout_width="fill_parent"
+                			android:layout_height="wrap_content"
+                			android:gravity="center"
+                			android:layout_marginTop="10dp"
+                			>
+                	<Button android:id="@+id/botton_left"
+                	    	android:layout_width="wrap_content"
+                	    	android:layout_height="wrap_content"
+                	    	android:layout_alignParentLeft="true"
+                	    	android:layout_marginLeft="20dp"
+                	    	android:text="@string/buttom_onPage"/>
+                	<LinearLayout android:layout_width="wrap_content"
+                	    		android:layout_height="wrap_content"
+                	    		android:layout_centerInParent="true">
+                	    	<TextView android:id="@+id/tv_left"
+                	    	    	  android:layout_width="wrap_content"
+		                	    	  android:layout_height="wrap_content"
+		                	    	  android:text="1"/>
+		                	<TextView android:layout_width="wrap_content"
+		                	    	  android:layout_height="wrap_content"
+		                	    	  android:text="@string/buttom_slash"/>
+		                	<TextView android:id="@+id/tv_right"
+		                	    	  android:layout_width="wrap_content"
+		                	    	  android:layout_height="wrap_content"
+		                	    	  android:text="1"/>
+                	</LinearLayout>
+                	
+                	<Button android:id="@+id/botton_right"
+                	    	android:layout_width="wrap_content"
+                	    	android:layout_height="wrap_content"
+                	    	android:layout_alignParentRight="true"
+                	    	android:layout_marginRight="20dp"
+                	    	android:text="@string/buttom_UpPage"/>
+            </RelativeLayout>
+            
+
+</RelativeLayout>

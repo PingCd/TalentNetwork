@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="updataurl">http://192.168.1.131:8080/74job/down/update.xml</string>
+
+    <string name="app_name">襄阳人才网</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">标题</string>
+    <!-- main activity -->
+    <string name="home">首页</string>
+    <string name="job_hunting">找工作</string>
+    <string name="individual_center">个人中心</string>
+    
+    
+    <!-- home -->
+    <string name="search">搜索</string>
+    <string name="et_context">请输入关键字</string>
+    
+    
+    <!-- job -->
+    <string name="newtitle">最新招聘信息</string>
+    <string name="newright_left">最近有</string>
+    <string name="newright_right">个职位在招聘</string>
+    <string name="job_prompt">对不起，没有你要查找的信息！</string>
+    
+    <!-- buttom -->
+    <string name="buttom_onPage">上一页</string>
+    <string name="buttom_slash">/</string>
+    <string name="buttom_UpPage">下一页</string>
+    
+    <!-- login -->
+    <string name="login_name">用户名</string>
+    <string name="login_password">密        码</string>
+    <string name="login">登录</string>
+    
+    
+    <!-- detailed -->
+    <string name="back">返回</string>
+    <string name="refresh">刷新</string>
+    <string name="detail">职位详情</string>
+    <string name="company">企业简介</string>
+    
+    <string name="companyName">企业名称 :</string>
+    <string name="time">招聘期限 : </string>
+    <string name="address">工作地点 : </string>
+    <string name="sex">性别要求 : </string>
+    <string name="education">学历要求 : </string>
+    <string name="experience">工作经验 : </string>
+    <string name="age">年龄要求 : </string>
+    <string name="salary">职位月薪 : </string>
+    <string name="welfare">其他福利 : </string>
+    
+    <string name="description">职位描述 </string>
+    <string name="station">岗位描述 ： </string>
+    <string name="apply">申请该职位 </string>
+    
+    <string name="company_home">主页： </string>
+    <string name="company_scale">规模： </string>
+    <string name="company_industry">行业： </string>
+    
+    <string name="alljob">全部职位 </string>
+    <string name="introduction">企业简介 </string>
+    <string name="phone">联系方式 </string>
+    
+    <!-- individual -->
+    <string name="hollow">你好！</string>
+    <string name="exit">退出</string>
+    <string name="invitation">面试邀请</string>
+    <string name="cast">已投职位</string>
+    <string name="resume">我的简历</string>
+    <string name="candidates">应聘者简历</string>
+    <string name="Inbox">收信箱</string>
+    <string name="management">职位管理</string>
+    
+    <!-- 简历-->
+    <string name="resume_title_time">最新时间:</string>
+    <string name="resume_title_number">会员编号:</string>
+    <string name="resume_title_browsecount">浏览次数:</string>
+    
+     <string name="resume_tv_userName">姓　　名:</string>
+    <string name="resume_tv_sex">性　　别:</string>
+    <string name="resume_tv_age">年　　龄:</string>
+    <string name="resume_tv_marital">婚　　姻:</string>
+    <string name="resume_tv_education">学　　历:</string>
+    <string name="resume_tv_graduationTime">毕业时间:</string>
+    <string name="resume_tv_jobExperience">工作经验:</string>
+    <string name="resume_tv_address">所&#160;&#160;在&#160;&#160;地:</string>
+    <string name="resume_tv_other">其他能力:</string>
+    <string name="resume_title">求职简历</string>
+    <string name="resume_tv_jobintention_intention_title">最有意向职位</string>
+    <string name="resume_tv_jobintention_category_title">欲从事工作类别</string>
+    <string name="resume_tv_jobintention_nature_title">工作性质</string>
+    <string name="resume_tv_jobintention_address_title">工作地</string>
+    <string name="resume_tv_jobintention_requirement_title">行业要求</string>
+    <string name="resume_tv_jobintention_salary_title">薪水要求</string>
+    
+    <string name="resume_tv_educationExperience">教育经历</string>
+    <string name="resume_tv_work">工作经验</string>
+    
+    <string name="word_tv_company">工作单位：</string>
+    <string name="word_tv_Inposition">从事职位：</string>
+    <string name="word_tv_description">工作描述：</string>
+    
+    <string name="resume_tv_Language">语言能力</string>
+    <string name="resume_tv_Contact">联系方式</string>
+    
+    
+    <!--education_tiem  -->
+    <string name="education_item_time_title">教育时限:</string>
+    <string name="education_item_education_title">学　　历:</string>
+    <string name="education_item_school_title">毕业学校:</string>
+    <string name="education_item_professional_title">所学专业:</string>
+    
+    <!-- 职位管理 -->
+    <string name="pm_pm_title">职位管理</string>
+    <string name="pmi_tv_positionRelease">发布：</string>
+    <string name="pmi_tv_positionby">截至：</string>
+    <string name="pmi_tv_state">状态：</string>
+    
+    <!--应聘者简历 -->
+    <string name="cr_tv_candidateResume">应聘者简历</string>
+    
+    <!--收信箱 -->
+    <string name="inbox_tv_title">收信箱</string>
+    
+    <!--已投职位 -->
+    <string name="cr_tv_case">已投职位</string>
+    
+     <!--面试邀请详情 -->
+    <string name="di_jobName">工作名称：</string>
+    <string name="di_copanyName">公司名称：</string>
+    <string name="di_time">面试时间：</string>
+    <string name="di_address">地　　址：</string>
+    <string name="di_phone">电　　话：</string>
+    <string name="di_note">备　　注：</string>
+    
+    
+    <!-- 搜索下拉 -->
+    <string-array name="search_arry"> 
+        <item>职位</item> 
+        <item>公司</item> 
+    </string-array> 
+    
+
+</resources>

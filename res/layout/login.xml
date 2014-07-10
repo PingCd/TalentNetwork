@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="#ebecee"
+     >
+     <RelativeLayout android:layout_width="fill_parent"
+         			  android:layout_height="wrap_content">
+		         <EditText android:id="@+id/login_name"
+		             	android:background="@drawable/login_name"
+			     	   android:layout_width="fill_parent"
+			     	  android:layout_height="40dp"
+			     	   android:paddingLeft="10dp"
+			     	   android:hint="@string/login_name"/>
+				 <EditText android:id="@+id/login_password"
+				    	 android:background="@drawable/login_password"
+				    	 android:password="true"
+				     	android:layout_below="@id/login_name"
+			     	   android:layout_width="fill_parent"
+			     	   android:layout_height="40dp"
+			     	   android:layout_marginTop="-1dp"
+			     	   android:paddingLeft="10dp"
+			     	   android:hint="@string/login_password"/>
+				 
+			<Button  android:id="@+id/login_btn_submit"
+				     android:layout_below="@id/login_password"
+				     android:layout_width="fill_parent"
+                	android:layout_height="wrap_content"
+                	android:text="@string/login"
+                	android:layout_marginTop="15dp"
+                	android:textColor="#FFFFFF"
+                	android:background="#f56010"
+                	android:paddingTop="10dp"
+                	android:paddingBottom="10dp"
+                	android:textSize="17sp"
+                	/>
+	 </RelativeLayout>
+	 
+     <RelativeLayout android:layout_width="fill_parent"
+         			android:layout_height="fill_parent">
+			<!-- 进度条 -->
+       		 <ProgressBar
+		            android:id="@+id/login_progressBar"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerInParent="true"
+		            android:visibility="gone" />
+      </RelativeLayout>  
+	 
+</RelativeLayout>

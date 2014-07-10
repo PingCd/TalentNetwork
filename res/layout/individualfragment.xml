@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ebecee"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titleLayout"
+        layout="@layout/title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <!-- 登录 -->
+        <LinearLayout
+            android:id="@+id/ll_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+            
+              <include android:id="@+id/inc_search"
+		        android:layout_height="wrap_content"
+		        layout="@layout/login" />
+        </LinearLayout>
+        <!-- 登录后的界面 -->
+		 <RelativeLayout
+            android:id="@+id/ll_individual"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+            <RelativeLayout android:id="@+id/ll_back"
+                		android:layout_width="fill_parent"
+                		android:layout_height="wrap_content"
+                		android:background="#ffffff">
+                <Button android:id="@+id/individual_refresh"
+                    	android:layout_width="wrap_content"
+                    	android:layout_height="wrap_content"
+                    	android:background="@drawable/refresh"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_text"
+                			android:layout_below="@id/ll_back"
+                		    android:layout_width="fill_parent"
+                		    android:layout_height="wrap_content"
+                		    android:layout_marginTop="15dp"
+                		    android:layout_marginBottom="15dp"
+                		    android:gravity="center">
+                <TextView android:id="@+id/tv_hollow"
+                    	  android:layout_width="wrap_content"
+	                      android:layout_height="wrap_content"
+	                      android:text="@string/hollow"
+	                      android:layout_alignParentLeft="true"
+	                      android:layout_marginLeft="10dp"
+	                      android:textSize="20sp"/>
+                <TextView android:id="@+id/tv_username"
+                    	  android:layout_toRightOf="@+id/tv_hollow"
+                    	  android:layout_width="wrap_content"
+	                      android:layout_height="wrap_content"
+	                      android:text=""
+	                      android:textColor="#ff0000"
+	                      android:textSize="20sp"/>
+                <TextView android:id="@+id/tv_exit"
+                    	  android:layout_width="wrap_content"
+	                      android:layout_height="wrap_content"
+	                      android:text="@string/exit"
+	                      android:layout_alignParentRight="true"
+	                      android:layout_marginRight="10dp"
+	                      android:textColor="#0000ff"
+	                      android:textSize="20sp"/>
+            </RelativeLayout>
+            <!-- 面试邀请 -->
+            <RelativeLayout android:id="@+id/rl_content1"
+                			android:layout_below="@id/rl_text"
+                			android:layout_width="fill_parent"
+                			android:layout_height="wrap_content"
+                			android:layout_marginLeft="10dp"
+                			android:layout_marginRight="10dp"
+                			android:gravity="center"
+                			android:background="#ffffff">
+                <LinearLayout android:layout_width="fill_parent"
+                    		  android:layout_height="wrap_content"
+                    		  android:layout_marginTop="25dp"
+                    		  android:layout_marginBottom="25dp">
+                	<TextView android:id="@+id/tv_invitation_title"
+                	    	  android:layout_width="wrap_content"
+                	    	  android:layout_height="wrap_content"
+                	    	  android:layout_weight="7"
+                	    	  android:layout_marginLeft="20dp"
+                	    	   android:gravity="center_vertical"
+                	    	  android:text="@string/invitation"
+                	    	  android:textSize="20sp"/>
+                	<TextView android:id="@+id/tv_invitation"
+                	    	  android:layout_width="wrap_content"
+                	    	  android:layout_height="wrap_content"
+                	    	  android:layout_weight="6"
+                	    	  android:gravity="center"
+                	    	  android:textColor="#ff0000"
+                	    	  android:text="0"
+                	    	  android:textSize="20sp"/>
+                 </LinearLayout>
+            </RelativeLayout>
+            <!-- 已投职位 -->
+            <RelativeLayout android:id="@+id/rl_content2"
+                			android:layout_below="@id/rl_content1"
+                			android:layout_width="fill_parent"
+                			android:layout_height="wrap_content"
+                			android:layout_marginLeft="10dp"
+                			android:layout_marginRight="10dp"
+                			android:layout_marginTop="15dp"
+                			android:layout_marginBottom="15dp"
+                			android:gravity="center"
+                			android:background="#ffffff">
+                <LinearLayout android:layout_width="fill_parent"
+                    		  android:layout_height="wrap_content"
+                    		  android:layout_marginTop="25dp"
+                    		  android:layout_marginBottom="25dp">
+                	<TextView android:id="@+id/tv_cast_title"
+                	    	  android:layout_width="wrap_content"
+                	    	  android:layout_height="wrap_content"
+                	    	  android:layout_weight="7"
+                	    	  android:layout_marginLeft="20dp"
+                	    	   android:gravity="center_vertical"
+                	    	  android:text="@string/cast"
+                	    	  android:textSize="20sp"/>
+                	<TextView android:id="@+id/tv_cast"
+                	    	  android:layout_width="wrap_content"
+                	    	  android:layout_height="wrap_content"
+                	    	  android:layout_weight="6"
+                	    	  android:gravity="center"
+                	    	  android:textColor="#ff0000"
+                	    	  android:text="0"
+                	    	  android:textSize="20sp"/>
+                 </LinearLayout>
+            </RelativeLayout>
+            <!-- 我的简历 -->
+            <RelativeLayout android:id="@+id/rl_content3"
+                			android:layout_below="@id/rl_content2"
+                			android:layout_width="fill_parent"
+                			android:layout_height="wrap_content"
+                			android:layout_marginLeft="10dp"
+                			android:layout_marginRight="10dp"
+                			android:gravity="center"
+                			android:background="#ffffff">
+                <LinearLayout android:layout_width="fill_parent"
+                    		  android:layout_height="wrap_content"
+                    		  android:layout_marginTop="25dp"
+                    		  android:layout_marginBottom="25dp">
+                	<TextView android:id="@+id/tv_resume_title"
+                	    	  android:layout_width="wrap_content"
+                	    	  android:layout_height="wrap_content"
+                	    	  android:layout_weight="7"
+                	    	  android:layout_marginLeft="20dp"
+                	    	   android:gravity="center_vertical"
+                	    	  android:text="@string/resume"
+                	    	  android:textSize="20sp"/>
+                	<TextView android:id="@+id/tv_resume"
+                	    	  android:layout_width="wrap_content"
+                	    	  android:layout_height="wrap_content"
+                	    	  android:layout_weight="6"
+                	    	  android:gravity="center"
+                	    	  android:textColor="#ff0000"
+                	    	  android:text="0"
+                	    	  android:textSize="20sp"/>
+                 </LinearLayout>
+            </RelativeLayout>
+            <!-- 应聘者简历 -->
+            <RelativeLayout android:id="@+id/rl_content4"
+                			android:layout_below="@id/rl_text"
+                			android:layout_width="fill_parent"
+                			android:layout_height="wrap_content"
+                			android:layout_marginLeft="10dp"
+                			android:layout_marginRight="10dp"
+                			android:gravity="center"
+                			android:background="#ffffff">
+                <LinearLayout android:layout_width="fill_parent"
+                    		  android:layout_height="wrap_content"
+                    		  android:layout_marginTop="25dp"
+                    		  android:layout_marginBottom="25dp">
+                	<TextView android:id="@+id/tv_candidates_title"
+                	    	  android:layout_width="wrap_content"
+                	    	  android:layout_height="wrap_content"
+                	    	  android:layout_weight="6"
+                	    	  android:layout_marginLeft="20dp"
+                	    	   android:gravity="center_vertical"
+                	    	  android:text="@string/candidates"
+                	    	  android:textSize="20sp"/>
+                	<TextView android:id="@+id/tv_candidates"
+                	    	  android:layout_width="wrap_content"
+                	    	  android:layout_height="wrap_content"
+                	    	  android:layout_weight="6"
+                	    	  android:gravity="center"
+                	    	  android:textColor="#ff0000"
+                	    	  android:text="0"
+                	    	  android:textSize="20sp"/>
+                 </LinearLayout>
+            </RelativeLayout>
+            <!-- 收信箱 -->
+            <RelativeLayout android:id="@+id/rl_content5"
+                			android:layout_below="@id/rl_content4"
+                			android:layout_width="fill_parent"
+                			android:layout_height="wrap_content"
+                			android:layout_marginLeft="10dp"
+                			android:layout_marginRight="10dp"
+                			android:layout_marginTop="15dp"
+                			android:layout_marginBottom="15dp"
+                			android:gravity="center"
+                			android:background="#ffffff"
+                			android:visibility="gone">
+                <LinearLayout android:layout_width="fill_parent"
+                    		  android:layout_height="wrap_content"
+                    		  android:layout_marginTop="25dp"
+                    		  android:layout_marginBottom="25dp">
+                	<TextView android:id="@+id/tv_inbox_title"
+                	    	  android:layout_width="wrap_content"
+                	    	  android:layout_height="wrap_content"
+                	    	  android:layout_weight="8"
+                	    	  android:layout_marginLeft="20dp"
+                	    	   android:gravity="center_vertical"
+                	    	  android:text="@string/Inbox"
+                	    	  android:textSize="20sp"/>
+                	<TextView android:id="@+id/tv_inbox"
+                	    	  android:layout_width="wrap_content"
+                	    	  android:layout_height="wrap_content"
+                	    	  android:layout_weight="6"
+                	    	  android:gravity="center"
+                	    	  android:textColor="#ff0000"
+                	    	  android:text="0"
+                	    	  android:textSize="20sp"/>
+                 </LinearLayout>
+            </RelativeLayout>
+            <!-- 职位管理 -->
+            <RelativeLayout android:id="@+id/rl_content6"
+                			android:layout_below="@id/rl_content5"
+                			android:layout_width="fill_parent"
+                			android:layout_height="wrap_content"
+                			android:layout_marginLeft="10dp"
+                			android:layout_marginTop="15dp"
+                			android:layout_marginRight="10dp"
+                			android:gravity="center"
+                			android:background="#ffffff">
+                <LinearLayout android:layout_width="fill_parent"
+                    		  android:layout_height="wrap_content"
+                    		  android:layout_marginTop="25dp"
+                    		  android:layout_marginBottom="25dp">
+                	<TextView android:id="@+id/tv_management_title"
+                	    	  android:layout_width="wrap_content"
+                	    	  android:layout_height="wrap_content"
+                	    	  android:layout_weight="7"
+                	    	  android:layout_marginLeft="20dp"
+                	    	   android:gravity="center_vertical"
+                	    	  android:text="@string/management"
+                	    	  android:textSize="20sp" />
+                	<TextView android:id="@+id/tv_management"
+                	    	  android:layout_width="wrap_content"
+                	    	  android:layout_height="wrap_content"
+                	    	  android:layout_weight="6"
+                	    	  android:gravity="center"
+                	    	  android:textColor="#ff0000"
+                	    	  android:text="0"
+                	    	  android:textSize="20sp"/>
+                 </LinearLayout>
+            </RelativeLayout>
+            
+        </RelativeLayout>
+        <!-- 进度条 -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

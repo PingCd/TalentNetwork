@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.talentnetwork.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    
+     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" >
+    </uses-permission>
+    
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+     <!-- wifi -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:name="com.talentnetwork.util.MyApplication"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:windowSoftInputMode="adjustPan"
+            android:name="com.talentnetwork.activity.Welcome"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait" android:launchMode="singleTask" android:configChanges="keyboard|keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talentnetwork.activity.MainActivity"
+             android:screenOrientation="portrait"
+             android:launchMode="singleTask" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <activity android:name="com.talentnetwork.activity.ResumeActivity"
+             android:screenOrientation="portrait"
+             android:launchMode="singleTask" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <activity android:name="com.talentnetwork.activity.PositionManagementActivity"
+             android:screenOrientation="portrait"
+             android:launchMode="singleTask" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <activity android:name="com.talentnetwork.activity.CandidateResumeActivity"
+             android:screenOrientation="portrait"
+             android:launchMode="singleTask" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <activity android:name="com.talentnetwork.activity.CastResumeActivity"
+             android:screenOrientation="portrait"
+             android:launchMode="singleTask" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <activity android:name="com.talentnetwork.activity.InBoxActivity"
+             android:screenOrientation="portrait"
+             android:launchMode="singleTask" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <activity android:name="com.talentnetwork.activity.DetailedActivity"
+             android:screenOrientation="portrait"
+             android:launchMode="singleTask" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <activity android:name="com.talentnetwork.activity.ResumeItemActivity"
+             android:screenOrientation="portrait"
+             android:launchMode="singleTask" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <activity android:name="com.talentnetwork.activity.DetailedManagementActivity"
+             android:screenOrientation="portrait"
+             android:launchMode="singleTask" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <activity android:name="com.talentnetwork.activity.InvitationActivity"
+             android:screenOrientation="portrait"
+             android:launchMode="singleTask" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <activity android:name="com.talentnetwork.activity.DetailedInvitationActivity"
+             android:screenOrientation="portrait"
+             android:launchMode="singleTask" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <activity android:name="com.talentnetwork.activity.WebViewActivity"
+             android:screenOrientation="portrait"
+             android:launchMode="singleTask" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <activity android:name=".NotificationUpdateActivity" 
+             android:screenOrientation="portrait"
+             android:launchMode="singleTask" android:configChanges="keyboard|keyboardHidden|orientation">
+        </activity>
+        <service android:name="com.talentnetwork.service.DownloadService" >
+        </service>
+        
+    </application>
+    
+   
+    
+
+</manifest>

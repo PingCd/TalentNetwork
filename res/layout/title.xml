@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#f87e17"
+    android:paddingLeft="15dp"
+    android:paddingRight="5dp"
+    >
+	 <Button
+        android:id="@+id/webback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible" 
+        android:background="@drawable/title"/>
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/title" 
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+        			android:layout_marginLeft="10dp"
+        			android:layout_marginRight="10dp"
+				    android:layout_marginTop="10dp"
+				    android:layout_marginBottom="10dp"
+				    android:paddingTop="8dp"
+				    android:paddingBottom="8dp"
+				    android:background="#ffffff">
+			    <RelativeLayout android:id="@+id/pmi_ll_left"
+			        		  android:layout_width="fill_parent"
+			        		  android:layout_height="wrap_content"
+			        		  android:layout_alignParentLeft="true"
+			        		  android:layout_marginLeft="10dp">
+			        	<TextView android:id="@+id/pmi_tv_positionName"
+			            	  android:layout_width="fill_parent"
+			            	  android:layout_height="wrap_content"
+			            	  android:textColor="#0000ff"/>	
+			           	<RelativeLayout android:id="@+id/mpi_rl_positionRelease"
+			           	    			android:layout_below="@id/pmi_tv_positionName"
+			           	    			android:layout_height="wrap_content"
+			           	    			android:layout_width="fill_parent">
+			           	      <TextView android:id="@+id/pmi_tv_positionRelease"
+						            	  android:layout_width="wrap_content"
+						            	  android:layout_height="wrap_content"
+						            	  android:text="@string/pmi_tv_positionRelease"/>	
+			            	  <TextView android:id="@+id/pmi_tv_positionRelease_time"
+			            	      		android:layout_toRightOf="@+id/pmi_tv_positionRelease"
+						            	  android:layout_width="wrap_content"
+						            	  android:layout_height="wrap_content"
+						            	  android:text=""/>	
+			           	</RelativeLayout>  
+			           	<RelativeLayout android:id="@+id/mpi_rl_positionby"
+			           	    			android:layout_below="@id/mpi_rl_positionRelease"
+			           	    			android:layout_height="wrap_content"
+			           	    			android:layout_width="fill_parent">
+			           	      <TextView android:id="@+id/pmi_tv_positionby"
+						            	  android:layout_width="wrap_content"
+						            	  android:layout_height="wrap_content"
+						            	  android:text="@string/pmi_tv_positionby"/>	
+			            	  <TextView android:id="@+id/pmi_tv_positionby_time"
+			            	      		android:layout_toRightOf="@+id/pmi_tv_positionby"
+						            	  android:layout_width="wrap_content"
+						            	  android:layout_height="wrap_content"
+						            	  android:text=""/>	
+			           	</RelativeLayout>  
+			           	<RelativeLayout android:id="@+id/mpi_rl_state"
+			           	    			android:layout_below="@id/mpi_rl_positionby"
+			           	    			android:layout_height="wrap_content"
+			           	    			android:layout_width="fill_parent">
+			           	      <TextView android:id="@+id/pmi_tv_state"
+						            	  android:layout_width="wrap_content"
+						            	  android:layout_height="wrap_content"
+						            	  android:text="@string/pmi_tv_state"/>	
+			            	  <TextView android:id="@+id/pmi_tv_stateValue"
+			            	      		android:layout_toRightOf="@+id/pmi_tv_state"
+						            	  android:layout_width="wrap_content"
+						            	  android:layout_height="wrap_content"
+						            	  android:textColor="#ff0000"/>	
+			           	</RelativeLayout>  
+			        	
+			    </RelativeLayout>
+		    <LinearLayout android:id="@+id/pmi_ll_right"
+		        		  android:layout_width="wrap_content"
+		        		  android:layout_height="70dp"
+		        		  android:layout_alignParentRight="true"
+		        		  android:gravity="center">
+		        	<ImageView android:layout_width="wrap_content"
+		        	    		android:layout_height="fill_parent"
+		        	    		android:src="@drawable/btn"/>	  
+		        	
+		    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

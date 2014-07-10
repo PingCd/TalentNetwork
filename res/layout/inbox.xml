@@ -1,0 +1,50 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ebecee">
+    <include
+        android:id="@+id/inbox_titleLayout"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        layout="@layout/title" />
+    <ScrollView android:layout_width="fill_parent"
+        		android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent"
+            			android:layout_height="wrap_content">
+            	<RelativeLayout android:id="@+id/cr_ll_back"
+                		android:layout_width="fill_parent"
+                		android:layout_height="wrap_content"
+                		android:background="#ffffff" >
+		                <Button android:id="@+id/inbox_back"
+		                    	android:layout_width="wrap_content"
+		                    	android:layout_height="wrap_content"
+		                    	android:text="@string/back"
+		                    	android:background="@drawable/back"
+		                    	android:paddingBottom="6dp"
+		                    	android:layout_marginLeft="10dp"/>
+    			</RelativeLayout>
+    			<TextView android:id="@+id/inbox_tv_title"
+    			    	  android:layout_below="@id/cr_ll_back"
+    			    	  android:layout_width="wrap_content"
+    			    	  android:layout_height="wrap_content"
+    			    	  android:layout_marginLeft="15dp"
+    			    	  android:layout_marginTop="10dp"
+    			    	  android:textSize="18sp"
+    			    	  android:text="@string/inbox_tv_title"/>
+    			<ListView android:id="@+id/inbox_listview"
+    			    	  android:layout_below="@id/inbox_tv_title"
+    			    	  android:layout_width="fill_parent"
+    			    	  android:layout_height="wrap_content">
+    			</ListView>
+    			<RelativeLayout android:layout_below="@id/inbox_listview"
+    			    			android:layout_width="fill_parent"
+    			    			android:layout_height="wrap_content">
+    			    <include layout="@layout/bottom"
+    			        	  android:layout_height="0dp"/>
+    			</RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    
+</LinearLayout>

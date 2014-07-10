@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebecee" >
+	<include
+        android:id="@+id/titleLayout"
+        layout="@layout/title" />
+    <ScrollView android:layout_below="@id/titleLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="vertical" >
+		   <LinearLayout android:layout_width="fill_parent"
+		       			android:layout_height="wrap_content"
+		       			android:background="#ffffff">
+		       		<Button android:id="@+id/detailedIn_back"
+                	android:paddingBottom="6dp"
+                	android:layout_marginLeft="10dp"
+                	android:layout_width="70dp"
+                	android:layout_height="wrap_content"
+                	android:background="@drawable/back"
+                	android:text="@string/back"/>
+		   </LinearLayout>
+			
+            <LinearLayout
+                android:id="@+id/ly_jobName"
+                android:layout_width="fill_parent"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="@string/di_jobName" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_jobName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_company"
+                android:layout_width="fill_parent"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="@string/di_copanyName" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_company"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_time"
+                android:layout_width="fill_parent"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="@string/di_time" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+                </TextView>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/ly_address"
+                android:layout_width="fill_parent"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="@string/di_address" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_telephone"
+                android:layout_width="fill_parent"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="@string/di_phone" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_telephone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+                </TextView>
+            </LinearLayout>
+
+            
+            <LinearLayout
+                android:id="@+id/ly_comment"
+                android:layout_width="fill_parent"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="@string/di_note" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_comment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
